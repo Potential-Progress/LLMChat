@@ -57,7 +57,6 @@ class Model:
         
         responses = self._llm.invoke(messages)
         return responses.content
-        
 if __name__ == "__main__":
     model = Model(provider="claude")
     response = model("你好")
