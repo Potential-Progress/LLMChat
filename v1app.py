@@ -1,8 +1,6 @@
 import streamlit as st
 from workspace.model.model import Model
 import uuid
-# from utils.sqlit import init_db, save_chat, load_chat
-#test
 from utils.v1sqlite import init_db, save_chat, load_chat
 def init():
     """
@@ -17,7 +15,7 @@ def init():
     # 会话初始化-如果没有 session_id，创建一个新的
     if 'session_id' not in st.session_state:
         st.session_state['session_id'] = st.query_params.get('session_id', [str(uuid.uuid4())])[0]    
-#test
+        
 def display_chat_history(session_id=None):
     """
     展示当前或者历史记录
