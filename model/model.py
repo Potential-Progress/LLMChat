@@ -48,8 +48,7 @@ class Model:
             )
         else:
             raise ValueError(f"Unsupported provider: {provider}")
-        
-        
+            
     def __call__(self,user_input):
         messages = [
             SystemMessage(content="You are a helpful and knowledgeable assistant. Answer questions clearly and concisely, providing examples when needed.And please answer in Chinese"),
