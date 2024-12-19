@@ -1,5 +1,5 @@
 import streamlit as st
-from model.model import Model
+from workspace.model.model import Model
 import uuid
 # from utils.sqlit import init_db, save_chat, load_chat
 #test
